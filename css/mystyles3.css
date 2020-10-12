@@ -63,32 +63,25 @@ body {
      font-size: 24px;
 }
 
-/*DISPLAY THE FORM AND ADDITIONAL INFORMATION*/
-main{
+/*MAIN CONTENT*/
+main ul {
     display: grid;
-    justify-content: center;
     grid-template-columns: auto auto;
-    margin: 50px;
+    grid-gap: 20px;
+	margin: 0;
+	padding: 0;
 }
 
-main input{
-    margin-bottom: 50px;
+main li {
+	list-style: none;
+    flex: 1 0 50%;
+    padding: 30px;
+    margin: 20px;
+    border: solid 2px black;
+    vertical-align: middle;
 }
 
-main textarea{
-    margin: 0;
-    width: 360px;
-    height: 150px;
-}
-
-main button{
-    width: 60px;
-    grid-column-start: 2;
-    justify-self: right;
-    margin-top: 10px;
-}
-
-/*FOOTER DISPLAY THE COPYRIGHT AND LINK TO FOLLOW*/
+/*FOOTER*/
 footer{
     background-color: lightskyblue;
     text-align: center;
@@ -97,4 +90,4 @@ footer{
     position: relative;
     bottom: 0;
     width: 100%;
-} 
+}
